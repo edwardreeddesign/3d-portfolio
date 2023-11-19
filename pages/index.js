@@ -71,7 +71,7 @@ export default function Home() {
               intensity={1}
             />
             <Bird />
-            <Sky sRotating={isRotating} />
+            <Sky isRotating={isRotating} />
             <Island
               isRotating={isRotating}
               setIsRotating={setIsRotating}
