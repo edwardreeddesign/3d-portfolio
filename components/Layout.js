@@ -13,7 +13,7 @@ const Layout = ({ children, title, description }) => {
         <meta charSet="UTF-8" />
         <meta name="description" content={description || defaultDescription} />
       </Head>
-      <div className="flex justify-between min-h-screen flex-col w-full pt-[4.5rem] md:pt-[5rem]">
+      <div className="flex justify-between min-h-screen flex-col w-full ">
         <Navbar />
         <main>{children}</main>
       </div>
