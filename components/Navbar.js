@@ -33,19 +33,17 @@ const Navbar = () => {
           className=" h-12 bg-black items-center justify-center flex shadow-lg p-2 rounded-lg"
         />
       </Link>
-      {navLinks.map(links => (
-        <nav
-          key={links.name}
-          className="flex  text-lg  gap-3 lg:gap-7 font-medium  "
-        >
+      <nav className="flex text-lg gap-7 font-medium">
+        {navLinks.map(links => (
           <Link
             href={links.url}
             className={router.pathname === links.url ? 'active' : ' '}
+            key={links.name}
           >
             {links.name}
           </Link>
-        </nav>
-      ))}
+        ))}
+      </nav>
     </header>
   );
 };
