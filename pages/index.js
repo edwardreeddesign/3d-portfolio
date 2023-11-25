@@ -82,8 +82,8 @@ export default function Home() {
               scale={islandScale}
             />
             <Plane
-              planeScale={planeScale}
-              planePosition={planePosition}
+              scale={planeScale}
+              position={planePosition}
               isRotating={isRotating}
               rotation={[0, 20.1, 0]}
             />
